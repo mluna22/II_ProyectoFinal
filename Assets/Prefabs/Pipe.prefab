@@ -12,8 +12,7 @@ GameObject:
   - component: {fileID: 8392637431191260603}
   - component: {fileID: 1293153403426575839}
   - component: {fileID: 8216787185165393671}
-  - component: {fileID: 1667125330252787063}
-  m_Layer: 3
+  m_Layer: 2
   m_Name: Pipe
   m_TagString: MolePipe
   m_Icon: {fileID: 0}
@@ -110,20 +109,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!114 &1667125330252787063
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1431750104816148428}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b427a1e15eca5d84ba06231cd56a398e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  up: 0
-  mole: {fileID: 8728884118595212520}
 --- !u!1 &1626048612063115128
 GameObject:
   m_ObjectHideFlags: 0
@@ -136,7 +121,7 @@ GameObject:
   - component: {fileID: 2433661582145624871}
   - component: {fileID: 2314253461647281050}
   - component: {fileID: 2067650200218727284}
-  m_Layer: 3
+  m_Layer: 2
   m_Name: Hole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -243,9 +228,10 @@ GameObject:
   - component: {fileID: 3178146603440801728}
   - component: {fileID: 5907046439823235006}
   - component: {fileID: 6436472479307720563}
+  - component: {fileID: 8797473807382810690}
   m_Layer: 3
   m_Name: Mole
-  m_TagString: Untagged
+  m_TagString: Mole
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -338,3 +324,32 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8797473807382810690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8728884118595212520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a479ef794f9ffc4e9efaf6194657ddb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isActive: 0
+  speeds:
+  - 3
+  - 5
+  - 10
+  - 10
+  timeLimits:
+  - 3
+  - 2
+  - 1
+  - 3
+  materials:
+  - {fileID: 2100000, guid: 571535e3b894dbc46a88d93cf31f9bd1, type: 2}
+  - {fileID: 2100000, guid: 7a8c153b98a74d1488db79cfbc194ec3, type: 2}
+  - {fileID: 2100000, guid: 6a101423b83c5a24280a5014ba216079, type: 2}
+  - {fileID: 2100000, guid: 1c91d2ac43ba36d4cbbcedfb9583a7ae, type: 2}
+  rewards: 0a0000001400000032000000ceffffff

@@ -139,12 +139,12 @@ PrefabInstance:
     - target: {fileID: 1431750104816148428, guid: 0a45326f3346946429d2a78fa6119f05,
         type: 3}
       propertyPath: m_Layer
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1626048612063115128, guid: 0a45326f3346946429d2a78fa6119f05,
         type: 3}
       propertyPath: m_Layer
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4405734921642454925, guid: 0a45326f3346946429d2a78fa6119f05,
         type: 3}
@@ -414,12 +414,12 @@ PrefabInstance:
     - target: {fileID: 1431750104816148428, guid: 0a45326f3346946429d2a78fa6119f05,
         type: 3}
       propertyPath: m_Layer
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1626048612063115128, guid: 0a45326f3346946429d2a78fa6119f05,
         type: 3}
       propertyPath: m_Layer
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4405734921642454925, guid: 0a45326f3346946429d2a78fa6119f05,
         type: 3}
@@ -508,12 +508,12 @@ PrefabInstance:
     - target: {fileID: 1431750104816148428, guid: 0a45326f3346946429d2a78fa6119f05,
         type: 3}
       propertyPath: m_Layer
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1626048612063115128, guid: 0a45326f3346946429d2a78fa6119f05,
         type: 3}
       propertyPath: m_Layer
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4405734921642454925, guid: 0a45326f3346946429d2a78fa6119f05,
         type: 3}
@@ -653,7 +653,7 @@ Transform:
   m_GameObject: {fileID: 907292807}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.87, z: 0}
+  m_LocalPosition: {x: 0, y: 7, z: -7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -821,14 +821,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 959308587}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 0, y: 5.74, z: -7}
+  m_LocalRotation: {x: 0.34793225, y: -0, z: -0, w: 0.9375197}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2109361390}
   m_Father: {fileID: 907292808}
-  m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 40.722, y: 0, z: 0}
 --- !u!114 &959308594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -889,12 +889,12 @@ PrefabInstance:
     - target: {fileID: 1431750104816148428, guid: 0a45326f3346946429d2a78fa6119f05,
         type: 3}
       propertyPath: m_Layer
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1626048612063115128, guid: 0a45326f3346946429d2a78fa6119f05,
         type: 3}
       propertyPath: m_Layer
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4405734921642454925, guid: 0a45326f3346946429d2a78fa6119f05,
         type: 3}
@@ -978,12 +978,12 @@ PrefabInstance:
     - target: {fileID: 1431750104816148428, guid: 0a45326f3346946429d2a78fa6119f05,
         type: 3}
       propertyPath: m_Layer
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1626048612063115128, guid: 0a45326f3346946429d2a78fa6119f05,
         type: 3}
       propertyPath: m_Layer
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4405734921642454925, guid: 0a45326f3346946429d2a78fa6119f05,
         type: 3}
@@ -1175,12 +1175,12 @@ PrefabInstance:
     - target: {fileID: 1431750104816148428, guid: 0a45326f3346946429d2a78fa6119f05,
         type: 3}
       propertyPath: m_Layer
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1626048612063115128, guid: 0a45326f3346946429d2a78fa6119f05,
         type: 3}
       propertyPath: m_Layer
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4405734921642454925, guid: 0a45326f3346946429d2a78fa6119f05,
         type: 3}
@@ -1260,7 +1260,7 @@ GameObject:
   - component: {fileID: 1264475276}
   - component: {fileID: 1264475275}
   - component: {fileID: 1264475274}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1434,12 +1434,12 @@ PrefabInstance:
     - target: {fileID: 1431750104816148428, guid: 0a45326f3346946429d2a78fa6119f05,
         type: 3}
       propertyPath: m_Layer
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1626048612063115128, guid: 0a45326f3346946429d2a78fa6119f05,
         type: 3}
       propertyPath: m_Layer
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4405734921642454925, guid: 0a45326f3346946429d2a78fa6119f05,
         type: 3}
@@ -1519,7 +1519,7 @@ GameObject:
   - component: {fileID: 1381940141}
   - component: {fileID: 1381940140}
   - component: {fileID: 1381940139}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1624,7 +1624,7 @@ GameObject:
   - component: {fileID: 1686992553}
   - component: {fileID: 1686992551}
   - component: {fileID: 1686992552}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: ScoreText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1749,12 +1749,12 @@ PrefabInstance:
     - target: {fileID: 1431750104816148428, guid: 0a45326f3346946429d2a78fa6119f05,
         type: 3}
       propertyPath: m_Layer
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1626048612063115128, guid: 0a45326f3346946429d2a78fa6119f05,
         type: 3}
       propertyPath: m_Layer
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4405734921642454925, guid: 0a45326f3346946429d2a78fa6119f05,
         type: 3}
@@ -1917,12 +1917,12 @@ PrefabInstance:
     - target: {fileID: 1431750104816148428, guid: 0a45326f3346946429d2a78fa6119f05,
         type: 3}
       propertyPath: m_Layer
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1626048612063115128, guid: 0a45326f3346946429d2a78fa6119f05,
         type: 3}
       propertyPath: m_Layer
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4405734921642454925, guid: 0a45326f3346946429d2a78fa6119f05,
         type: 3}

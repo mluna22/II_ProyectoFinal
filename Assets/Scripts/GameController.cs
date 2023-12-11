@@ -4,28 +4,22 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
-    enum MoleType {
-        Easy,
-        Medium,
-        Hard,
-        Bad
-    }
     public TextMesh scoreText;
     public int score;
     private float easyMoleProb;
     private float mediumMoleProb;
     private float hardMoleProb;
-    private GameObject[] pipes;
+    private GameObject[] moles;
     public float interval = 1f;
     private float time;
-    private int numActivePipes ;
+    private int numActiveMoles;
 
     void Start()
     {
         score = 0;
-        numActivePipes = 0;
+        numActiveMoles = 0;
         scoreText.text = "SCORE\n000";
-        pipes = GameObject.FindGameObjectsWithTag("MolePipe");
+        moles = GameObject.FindGameObjectsWithTag("Mole");
         time = 0f;
 
         easyMoleProb = 1/2f;
@@ -38,14 +32,21 @@ public class GameController : MonoBehaviour
         scoreText.text = "SCORE\n" + score.ToString("000");
         time += Time.deltaTime;
         
-        if (time > interval) {
-            time = 0f;
-            GameObject pipe = SelectPipe();
-            MoleType moleType = SelectMoleType();
-            pipe.GetComponent<PipeController>().ActivateMole();
-            numActivePipes++;
+        numActiveMoles = 0;
+        foreach (GameObject mole in moles) {
+            if (mole.GetComponent<MoleController>().IsMoleActive()) {
+                numActiveMoles++;
+            }
         }
-
+        
+        if (numActiveMoles < moles.Length && time > interval) {
+            time = 0f;
+            GameObject mole = SelectMole();
+            MoleType moleType = SelectMoleType();
+            Debug.Log(moleType);
+            mole.GetComponent<MoleController>().SetMole(moleType);
+            mole.GetComponent<MoleController>().ActivateMole();
+        }
     }
 
     MoleType SelectMoleType() {
@@ -61,11 +62,11 @@ public class GameController : MonoBehaviour
         }
     }
 
-    GameObject SelectPipe() {
-        int index = Random.Range(0, pipes.Length);
-        do {
-            index = Random.Range(0, pipes.Length);
-        } while (pipes[index].GetComponent<PipeController>().IsMoleActive() && numActivePipes < pipes.Length);
-        return pipes[index];
+    GameObject SelectMole() {
+        int index = Random.Range(0, moles.Length);
+        while (moles[index].GetComponent<MoleController>().IsMoleActive()) {
+            index = Random.Range(0, moles.Length);
+        }
+        return moles[index];
     }
 }
