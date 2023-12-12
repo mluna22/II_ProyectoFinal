@@ -27,6 +27,8 @@ public class GameController : MonoBehaviour
         moles = GameObject.FindGameObjectsWithTag("Mole");
         time = 0f;
 
+        GameObject.Find("Main Camera").transform.LookAt(GameObject.Find("Table").transform);
+
         easyMoleProb = 1/2f;
         mediumMoleProb = easyMoleProb + 1/4f;
         hardMoleProb = mediumMoleProb + 1/8f;
@@ -43,6 +45,7 @@ public class GameController : MonoBehaviour
         }
         timerText.text = "TIME\n" + ((int)(timeLimit - gameTime)).ToString("00");
         scoreText.text = "SCORE\n" + score.ToString("000");
+        highScoreText.text = "HIGH SCORE\n" + PlayerPrefs.GetInt("highscore").ToString("000");
         time += Time.deltaTime;
         gameTime += Time.deltaTime;
         
@@ -88,12 +91,13 @@ public class GameController : MonoBehaviour
     }
 
     void SaveResult() {
-        if (PlayerPrefs.HasKey("HighScore")) {
-            if (score > PlayerPrefs.GetInt("HighScore")) {
-                PlayerPrefs.SetInt("HighScore", score);
+        PlayerPrefs.SetInt("score", score); 
+        if (PlayerPrefs.HasKey("highscore")) {
+            if (score > PlayerPrefs.GetInt("highscore")) {
+                PlayerPrefs.SetInt("highscore", score);
             }
         } else {
-            PlayerPrefs.SetInt("HighScore", score);
+            PlayerPrefs.SetInt("highscore", score);
         }
     }
 
