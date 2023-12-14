@@ -15,7 +15,7 @@ public class MoleController : MonoBehaviour
     public float[] timeLimits;
     public Material[] materials;
     public int[] rewards;
-    public delegate void Message(int points);
+    public delegate void Message(int points, Transform moleTransform);
     public event Message OnMoleHit;
     void Start() {
         isActive = false;
@@ -55,6 +55,7 @@ public class MoleController : MonoBehaviour
 
     void OnPointerEnter() {
         GetComponent<Renderer>().material.color *= 0.75f;
+        OnPointerClick();
     }
 
     void OnPointerExit() {
@@ -64,7 +65,7 @@ public class MoleController : MonoBehaviour
     void OnPointerClick() {
         if (isActive) {
             DeactivateMole();
-            OnMoleHit?.Invoke(reward);
+            OnMoleHit?.Invoke(reward, transform);
         }
     }
 

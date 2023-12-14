@@ -18,7 +18,8 @@ public class GameController : MonoBehaviour
     private float time;
     private float gameTime;
     private int numActiveMoles;
-
+    public AudioSource moleHitSound;
+    public GameObject floatingTextPrefab;
     void Start()
     {
         score = 0;
@@ -34,7 +35,7 @@ public class GameController : MonoBehaviour
         hardMoleProb = mediumMoleProb + 1/8f;
 
         foreach (GameObject mole in moles) {
-            mole.GetComponent<MoleController>().OnMoleHit += AddScore;
+            mole.GetComponent<MoleController>().OnMoleHit += OnMoleHit;
         }
     }
 
@@ -86,8 +87,25 @@ public class GameController : MonoBehaviour
         return moles[index];
     }
 
-    public void AddScore(int reward) {
+    public void OnMoleHit(int reward, Transform moleTransform) {
+        AddScore(reward, moleTransform);
+        PlayHitSound();
+    }
+
+    public void AddScore(int reward, Transform moleTransform) {
         score += reward;
+        // Spawn a floating text at the mole's position to show the reward
+        GameObject floatingText = Instantiate(floatingTextPrefab, moleTransform.position + Vector3.up * 1.5f + Vector3.left, Quaternion.identity);
+        // Set the text to look at camera
+        floatingText.transform.LookAt(GameObject.Find("Main Camera").transform);
+        floatingText.transform.Rotate(0, 180, 0);
+        floatingText.transform.GetChild(0).GetComponent<TextMeshPro>().text = (reward < 0 ? "" : "+") + reward.ToString();
+        floatingText.transform.GetChild(0).GetComponent<TextMeshPro>().color = (reward < 0 ? Color.red : Color.green);
+        Destroy(floatingText, 1.5f);
+    }
+
+    public void PlayHitSound() {
+        moleHitSound.Play();
     }
 
     void SaveResult() {
