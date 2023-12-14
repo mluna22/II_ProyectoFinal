@@ -17,7 +17,6 @@ El objetivo del juego es aplastar el mayor número de topos a lo largo de 30s , 
  * Topo Dorado: Es el topo deluxe con una puntuación de 50 puntos.
  * Topo Rojo: Este topo se ha de evitar, debido a que si se le golpea se le restarán 50 puntos.
 
-
 ## Hitos de programación logrados
 
  * Uso de delegados.
