@@ -42,7 +42,7 @@ Esta experiencia cinematográfica que emocionó a Spilber, consite en que eres l
  * Posee un alto nivel de rejugabilidad debido a la tabla de puntuación, la poca duración de las partidas y la aleatoriedad de cada una de ellas.
 
 ## Gif
-![](Demos/demo.gif)
+![](Demo/demo.gif)
 
 ## Acta de los acuerdos del grupo respecto al trabajo en equipo
 El proyecto fue realizado en conjunto ignorando la distinción de tareas.
