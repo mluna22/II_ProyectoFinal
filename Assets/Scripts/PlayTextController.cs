@@ -3,12 +3,10 @@ using UnityEngine.SceneManagement;
 
 public class PlayTextController : MonoBehaviour
 {
-    private GameObject camera;
     public GameObject lookAt;
     public string sceneName = "";
     void Start() {
-        camera = GameObject.Find("Player");
-        camera.transform.LookAt(lookAt.transform);
+        GameObject.Find("Main Camera").transform.LookAt(lookAt.transform);
         GameObject.Find("Player").transform.position = new Vector3(13.77f,2.18f,-6.53f);
     }
     void OnPointerEnter() {}

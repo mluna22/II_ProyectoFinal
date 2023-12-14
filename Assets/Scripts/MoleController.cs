@@ -55,7 +55,6 @@ public class MoleController : MonoBehaviour
 
     void OnPointerEnter() {
         GetComponent<Renderer>().material.color *= 0.75f;
-        OnPointerClick();
     }
 
     void OnPointerExit() {
