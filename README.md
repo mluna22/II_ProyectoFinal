@@ -31,8 +31,6 @@ El objetivo del juego es aplastar el mayor número de topos a lo largo de 30s , 
 
 ## Aspectos que destacarías en la aplicación
 
-Esta aplicación es un logro tecnológico donde se agrupan todos los conocimientos aprendidos en esta increíble y maravillosa asignatura llamada Interfaces No Tan Inteligentes logrando así esta obra maestra jamás vista.
-Esta experiencia cinematográfica que emocionó a Spilber, consite en que eres la última defensa frente
  * Variedad de enemigos: Tenemos diferentes tipos de topos, los cuales poseen distintos colores cada uno, así como diferentes parámetros de velocidad, tiempo para ser golpeado, y la probabilidad de aparición.
  * Posee un repertorio de musica entretenida con una temática retro acorde  para hacer el juego más ameno.
  * Posee efectos visuales y de sonido para dar feedback al usuario a la hora de golpear al topo.
